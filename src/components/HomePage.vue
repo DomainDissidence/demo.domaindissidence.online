@@ -3,7 +3,6 @@ import Deal from "@/components/Deal.vue";
 import { onMounted, ref } from "vue";
 import { animate } from "animejs";
 import { useConfigStore } from "@/stores/configStore.js";
-// import DownChevron from "@/components/icons/DownChevron.vue";
 import DownChevron from "@/assets/icons/down-chevron.svg";
 
 
@@ -16,7 +15,7 @@ const searchText = ref("");
 
 
 function getSearchResults() {
-    return config.boycottTargets
+    return config.targets
         .filter(target => target.name.toLowerCase()
             .includes(searchText.value.toLowerCase()));
 }
@@ -38,7 +37,7 @@ function scrollToDeals(_event) {
 }
 
 if (START_FROM_SWAPPED_PAGE)
-    onMounted(() => document.querySelector(".deal button").click());
+    onMounted(() => document.querySelector(".mcdonalds button").click());
 </script>
 
 
@@ -74,7 +73,9 @@ if (START_FROM_SWAPPED_PAGE)
                 <template v-for="target in getSearchResults()">
                     <Deal
                         v-for="dealText in target.deals"
-                        :target="target">
+                        :target="target"
+                        :numTargets="config.targets.length">
+
                         <p>{{ dealText }}</p>
                     </Deal>
                 </template>

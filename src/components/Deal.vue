@@ -2,19 +2,26 @@
 import { onMounted } from "vue";
 import { useAppStore } from "@/stores/appStore.js";
 
-const props = defineProps({ target: Object });
+const props = defineProps({
+    target: Object,
+    numTargets: Number,
+});
 
-let order = Math.floor(Math.random() * 6);
-onMounted(() => { order = Math.floor(Math.random() * 6); });
+let order = Math.floor(Math.random() * props.numTargets);
+onMounted(() => { order = Math.floor(Math.random() + props.numTargets); });
 
+// console.log(props.numTargets)
 const appStore = useAppStore();
 
+
+const getTargetClass = () => props.target.name.replaceAll(/[^a-zA-Z0-9]/g, "").toLowerCase();
 </script>
 
 
 
 <template>
-    <div class="deal" :style="`order:` + order">
+    <div class="deal" :class="getTargetClass()"
+         :style="`order:` + order">
         <div class="deal-icon" :style="'background-image: url(\'' + props.target.logo + '\');'"></div>
 
         <div class="deal-content">
@@ -23,7 +30,8 @@ const appStore = useAppStore();
             <button @click="() => {
                 appStore.setCurrentTarget(props.target);
                 appStore.setShowingGripes(true);
-            }">Redeem</button>
+            }">Redeem
+            </button>
         </div>
     </div>
 </template>

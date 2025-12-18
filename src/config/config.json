@@ -1,0 +1,132 @@
+{
+    "text": {
+        "title": "DomainDissidence Demo",
+        "landingText": "Get deals on the things that matter the most to you.",
+        "landingButtonText": "Find Deals"
+    },
+    "assets": {
+        "landingImage": "img/landing.webp"
+    },
+    "colors": {
+        "background": "#262027",
+        "surface": "#3c3440",
+        "darker": "#1f1f1f",
+        "text": "#e3e3e3",
+        "textDim": "#cccccc",
+        "accent": "#6fed6f",
+        "blood": "#ff381a",
+        "blood_lighter": "#ff4e44"
+    },
+    "favicons": [
+        {
+            "rel": "icon",
+            "sizes": "16x16",
+            "type": "image/ico",
+            "url": "favicon/favicon.ico"
+        },
+        {
+            "rel": "icon",
+            "sizes": "16x16",
+            "type": "image/png",
+            "url": "favicon/favicon-16x16.png"
+        },
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "type": "image/png",
+            "url": "./favicon/favicon-32x32.png"
+        },
+        {
+            "rel": "apple-touch-icon",
+            "sizes": "180x180",
+            "type": "image/png",
+            "url": "./favicon/apple-touch-icon.png"
+        }
+    ],
+    "targets": [
+        {
+            "deals": [
+                "Get 20% off when you buy a meal on Sunday!",
+                "Buy One Get One Free on All Coke products!"
+            ],
+            "gripes": [
+                "This is a header for a bad thing they've done. This is for details of the bad things they've done.",
+                "This is the header for another bad thing they've done. This is the details of the other bad things they've done."
+            ],
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mlyoCgfb8R2cKndGZehmHtvSpP3k5vnt8g&s",
+            "name": "Chick-Fil-A"
+        },
+        {
+            "name": "Nike",
+            "deals": [
+                "Get 20% off when you buy shoes on 12/10!",
+                "Buy One Get One Free on all sneakers!"
+            ],
+            "gripes": [
+                "This is a bad thing they've done",
+                "This is another bad thing they've done."
+            ],
+            "logo": "https://substackcdn.com/image/fetch/$s_!XD-J!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F67979fc2-9bc6-4ef1-a91a-9f8129c57645_1500x1500.jpeg"
+        },
+        {
+            "deals": [
+                "Get 20% off when you buy shoes on 12/10!",
+                "Buy One Get One Free on all sneakers!"
+            ],
+            "gripes": [
+                "This is a bad thing they've done",
+                "This is anotehr bad thing they've done."
+            ],
+            "logo": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/960x540/689347.jpg",
+            "name": "Adidas"
+        },
+        {
+            "name": "McDonald's",
+            "logo": "https://cdn.produkto.io/photos/2025/05/04/mcdonalds-logo-2006.webp",
+            "deals": [
+                "Deal 1",
+                "Deal 2"
+            ],
+            "cards": [
+                {
+                    "header": "2019: Successfully Sued for $26 Million for Wage Theft.",
+                    "paragraphs": [
+                        "A seven-year-long class-action lawsuit against McDonald's concluded on November 25, 2019, with the agreement for McDonald's to pay $26 million dollars in restitution.",
+                        "It is alleged that the chain would deliberately structure employees' shifts so that they would not be able to receive overtime pay by technicality.",
+                        "This follows a long trend of McDonald's being accused of and sued for wage theft, ethics violations, and sexual harassment."
+                    ]
+                },
+                {
+                    "header": "2020: Sued by 52 Black Franchise Owners for Racial Discrimination.",
+                    "paragraphs": [
+                        "52 Black McDonald's franchise owners sued McDonald's in 2020 in a class-action lawsuit, presenting that Black franchisees would be intentionally and disproportionately pushed to own stores in areas that received less revenue and had higher security expenses."
+                    ]
+                },
+                {
+                    "header": "2021: Sued by Herbert Washington for Racial Discrimination.",
+                    "paragraphs": [
+                        "Herbet Washington, the former professional athlete, sued McDonald's in 2021 for almost identical reasons to the 2020 class-action lawsuit by 52 Black franchise owners.",
+                        "He claimed that he was deliberately pushed to operate in lower-income, predominantly Black neighborhoods simply because Washington himself is Black."
+                    ]
+                },
+                {
+                    "header": "2024: Makes Offer to Feed the Israeli Military for Free as the IDF Perpetuates Genocide Against Palestinians.",
+                    "paragraphs": [
+                        "In April 2024, McDonald's said it would feed soldiers in the Israel Defense Forces (IDF) for free. They also stated that they would buy all 225 McDonald's franchises in Israel, which are currently owned by an Israeli franchise called Alonyal instead of McDonald's themselves. These actions, outside present contexts, are not intrinsically bad, though.",
+                        "Armed conflict on October 7th, 2024 initiated the latest, notable ongoing installment of the Israeli-Palestinian conflict, though many would say that the conflict has never paused. This round of conflict has seen an unprecedented amount of civilians — namely children — being deliberately murdered for military advantage, though. This, alongside intent shown through the words and actions of Israel's Prime Minister Benjamin Netanyahu, has caused many to begin calling this a genocide instead of a conflict.",
+                        "McDonald's made this gesture of friendship towards Israel at a time when this was far too well known; it could not just be apolitical ignorance. It is instead an explicit endorsement of genocide.",
+                        "McDonald's has actively attempted to deny this, though. Also in 2024, they filed a SLAPP lawsuit against BDS Malaysia for helping organize a boycott against them for this reason, citing \"defamation.\""
+                    ]
+                }
+            ],
+            "citations": [
+                "https://thehill.com/changing-america/respect/equality/472085-mcdonalds-pays-26-million-to-settle-lawsuit-over-wages/",
+                "https://apnews.com/article/ap-top-news-race-and-ethnicity-il-state-wire-business-us-news-b17e8bd40fcebf05af98a40a5ad91e9f",
+                "https://www.cnn.com/2021/12/21/us/mcdonalds-settles-lawsuit-black-franchise-owner/index.html",
+                "https://www.aljazeera.com/news/2024/4/5/mcdonalds-buys-all-225-of-israeli-franchise-restaurants-after-boycotts",
+                "https://bdsmovement.net/Boycott-McDonalds"
+            ]
+        }
+    ]
+}
+

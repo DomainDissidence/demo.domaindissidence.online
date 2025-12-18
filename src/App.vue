@@ -1,15 +1,17 @@
 <script setup>
-import configFile from "@/config/config.toml";
 import HomePage from "@/components/HomePage.vue";
 import SwitchPage from "@/components/SwitchPage.vue";
 import { useAppStore } from "@/stores/appStore.js";
 import { useConfigStore } from "@/stores/configStore.js";
 
 
-document.title = configFile.text.title;
+const config = useConfigStore().getConfig();
 
 
-configFile.favicons.forEach(favicon => {
+document.title = config.title;
+
+
+config.favicons.forEach(favicon => {
     const link = document.createElement("link");
     link.rel = favicon.rel;
     link.type = favicon.type;
@@ -22,7 +24,6 @@ configFile.favicons.forEach(favicon => {
 const appStore = useAppStore();
 appStore.setShowingGripes(false);
 
-const config = useConfigStore().getConfig();
 
 </script>
 
@@ -36,6 +37,8 @@ const config = useConfigStore().getConfig();
 
 
 <style lang="scss">
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -49,6 +52,7 @@ const config = useConfigStore().getConfig();
     --color-surface: v-bind(config.colors.surface);
     --color-darker: v-bind(config.colors.darker);
     --color-blood: v-bind(config.colors.blood);
+    --color-blood-lighter: v-bind(config.colors.blood_lighter);
 }
 
 
