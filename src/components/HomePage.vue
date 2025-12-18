@@ -32,7 +32,7 @@ function startAnim() {
 }
 
 
-function scrollTo(_event) {
+function scrollToDeals(_event) {
     const dealsSection = document.querySelector("#deals");
     window.scrollTo(0, dealsSection.offsetTop);
 }
