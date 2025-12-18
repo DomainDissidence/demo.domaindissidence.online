@@ -1,0 +1,85 @@
+[text]
+title="DomainDissidence Demo"
+landingText="Get deals on the things that matter the most to you."
+landingButtonText="Find Deals"
+
+[assets]
+landingImage="img/landing.webp"
+
+[colors]
+background="#262027"
+#surface="#362f3a"
+#surface="#2f2933"
+#surface="#39323d"
+surface="#3c3440"
+darker="#1f1f1f"
+textDim="#cccccc"
+text="#e3e3e3"
+accent="#6fed6f"
+blood="#ff381a"
+
+
+[[favicons]]
+rel="icon"
+type="image/ico"
+sizes="16x16"
+url="favicon/favicon.ico"
+
+[[favicons]]
+rel="icon"
+type="image/png"
+sizes="16x16"
+url="favicon/favicon-16x16.png"
+
+[[favicons]]
+rel="icon"
+type="image/png"
+sizes="32x32"
+url="./favicon/favicon-32x32.png"
+
+[[favicons]]
+rel="apple-touch-icon"
+type="image/png"
+sizes="180x180"
+url="./favicon/apple-touch-icon.png"
+
+
+
+[[boycottTargets]]
+name="Chick-Fil-A"
+logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mlyoCgfb8R2cKndGZehmHtvSpP3k5vnt8g&s"
+deals = [
+    "Get 20% off when you buy a meal on Sunday!",
+    "Buy One Get One Free on All Coke products!"
+]
+gripes = [
+    "This is a header for a bad thing they've done. This is for details of the bad things they've done.",
+
+    "This is the header for another bad thing they've done. This is the details of the other bad things they've done."
+]
+
+
+[[boycottTargets]]
+name="Nike"
+logo="https://substackcdn.com/image/fetch/$s_!XD-J!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F67979fc2-9bc6-4ef1-a91a-9f8129c57645_1500x1500.jpeg"
+deals = [
+    "Get 20% off when you buy shoes on 12/10!",
+    "Buy One Get One Free on all sneakers!"
+]
+gripes = [
+    "This is a bad thing they've done",
+    "This is anotehr bad thing they've done."
+]
+
+
+[[boycottTargets]]
+name="Adidas"
+logo="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/960x540/689347.jpg"
+deals = [
+    "Get 20% off when you buy shoes on 12/10!",
+    "Buy One Get One Free on all sneakers!"
+]
+gripes = [
+    "This is a bad thing they've done",
+    "This is anotehr bad thing they've done."
+]
