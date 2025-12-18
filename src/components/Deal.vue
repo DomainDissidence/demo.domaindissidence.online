@@ -36,18 +36,28 @@ const appStore = useAppStore();
     flex-direction: column;
     border-radius: 10px;
     //width: 260px;
-    //min-width: 260px;
-    min-width: 230px;
+    //min-width: 200px;
+    width: 235px;
     min-height: 300px;
     position: relative;
     box-shadow: 0 0 6px rgba(black, .5);
     overflow: hidden;
+    //place-self: center;
     //height: 100%;
+
+    @media screen and (max-width: 500px) {
+        width: 300px;
+        min-height: 350px;
+
+        .deal-icon {
+            min-height: 130px !important;
+        }
+    }
 
     .deal-icon {
         display: block;
         width: 100%;
-        min-height: 110px;
+        min-height: 115px;
         background-position: center;
         background-size: cover;
         position: relative;

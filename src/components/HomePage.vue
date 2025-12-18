@@ -3,6 +3,8 @@ import Deal from "@/components/Deal.vue";
 import { onMounted, ref } from "vue";
 import { animate } from "animejs";
 import { useConfigStore } from "@/stores/configStore.js";
+// import DownChevron from "@/components/icons/DownChevron.vue";
+import DownChevron from "@/assets/icons/down-chevron.svg";
 
 
 
@@ -30,7 +32,7 @@ function startAnim() {
 }
 
 
-function scrollToDeals(_event) {
+function scrollTo(_event) {
     const dealsSection = document.querySelector("#deals");
     window.scrollTo(0, dealsSection.offsetTop);
 }
@@ -55,7 +57,8 @@ if (START_FROM_SWAPPED_PAGE)
         </div>
 
         <div id="down-chevron">
-            <img src="/icon/chevron-down.svg" alt="Down arrow icon" @load="startAnim">
+            <img :src="DownChevron" alt="Down arrow icon" @load="startAnim">
+            <!-- <DownChevron /> -->
         </div>
     </section>
 
@@ -181,10 +184,8 @@ section#landing {
     }
 
     #down-chevron {
-        img {
-            stroke: white !important;
-            color: white !important;
-            fill: white !important;
+        svg, img {
+            color: white;
             width: 100%;
             height: 100%;
         }
@@ -246,11 +247,19 @@ section#deals {
 
         #deals-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
             grid-gap: 17px;
+            //column-gap: 5px;
             width: 100%;
+            //max-width: 100%;
+            //background-color: red;
+            //grid-auto-flow: row dense;
             place-items: center;
             place-content: center;
+            //place-content: space-evenly space-evenly;
+            //place-self: center;
+            //place-items: center center ;
+            //place-;
         }
     }
 }
